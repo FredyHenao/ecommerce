@@ -1,8 +1,11 @@
 import {
+    FETCH_PRODUCT_INIT,
     FETCH_PRODUCT_FAILURE,
     FETCH_PRODUCT_SUCCESS,
+    FETCH_PRODUCTS_INIT,
     FETCH_PRODUCTS_FAILURE,
     FETCH_PRODUCTS_SUCCESS,
+    SAVE_PRODUCT_INIT,
     SAVE_PRODUCT_FAILURE,
     SAVE_PRODUCT_SUCCESS
 } from './types';
@@ -55,7 +58,7 @@ export function fetchProducts() {
     return async(dispatch => {
         dispatch(() => {
             return {
-                type: 'FETCH_PRODUCTS_INIT'
+                type: FETCH_PRODUCTS_INIT
             }
         });
 
@@ -72,7 +75,7 @@ export function fetchProduct(productId) {
     return async(dispatch => {
         dispatch(() => {
             return {
-                type: 'FETCH_PRODUCTS_INIT'
+                type: 'FETCH_PRODUCT_INIT'
             }
         });
 
@@ -89,7 +92,7 @@ export function saveProduct(product) {
     return async(dispatch => {
         dispatch(() => {
             return {
-                type: 'SAVE_PRODUCT_INIT'
+                type: SAVE_PRODUCT_INIT
             }
         });
 
