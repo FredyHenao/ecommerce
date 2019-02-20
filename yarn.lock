@@ -1273,6 +1273,14 @@ concat-stream@^1.5.0:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
+connected-react-router@^6.3.1:
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/connected-react-router/-/connected-react-router-6.3.1.tgz#b68e505cca553ce9b6a179d4166cf43b948c85bf"
+  integrity sha512-nhuQiLOAQlCgkCypGSUhycgaqqTh2IUwVFvzw2y13v8JqB92yTk3yeAKG6X1b0IcD7S4gQizYbjgejf7DJjbyw==
+  dependencies:
+    immutable "^3.8.1"
+    seamless-immutable "^7.1.3"
+
 console-browserify@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/console-browserify/-/console-browserify-1.1.0.tgz#f0241c45730a9fc6323b206dbf38edc741d0bb10"
@@ -2051,6 +2059,11 @@ ignore-walk@^3.0.1:
   integrity sha512-DTVlMx3IYPe0/JJcYP7Gxg7ttZZu3IInhuEhbchuqneY9wWe5Ojy2mXLBaQFUQmo0AW2r3qG7m1mg86js+gnlQ==
   dependencies:
     minimatch "^3.0.4"
+
+immutable@^3.8.1:
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.8.2.tgz#c2439951455bb39913daf281376f1530e104adf3"
+  integrity sha1-wkOZUUVbs5kT2vKBN28VMOEErfM=
 
 imurmurhash@^0.1.4:
   version "0.1.4"
@@ -3292,6 +3305,11 @@ schema-utils@^1.0.0:
     ajv "^6.1.0"
     ajv-errors "^1.0.0"
     ajv-keywords "^3.1.0"
+
+seamless-immutable@^7.1.3:
+  version "7.1.4"
+  resolved "https://registry.yarnpkg.com/seamless-immutable/-/seamless-immutable-7.1.4.tgz#6e9536def083ddc4dea0207d722e0e80d0f372f8"
+  integrity sha512-XiUO1QP4ki4E2PHegiGAlu6r82o5A+6tRh7IkGGTVg/h+UoeX4nFBeCGPOhb4CYjvkqsfm/TUtvOMYC1xmV30A==
 
 semver@^5.3.0:
   version "5.6.0"
