@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-class ProductListContainer extends Component {
+export default class ProductListContainer extends Component {
     render() {
         return(
           <div>

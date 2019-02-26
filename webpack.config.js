@@ -4,8 +4,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     devtool: 'cheap-module-eval-source-map',
+
     resolve: {
-        extensions: ['.js','.jsx'],
+        extensions: ['.js', '.jsx'],
         modules: [
             path.join(__dirname, 'src'),
             'node_modules'
@@ -15,11 +16,11 @@ module.exports = {
     entry: [
         'webpack-dev-server/client',
         'webpack/hot/only-dev-server',
-        path.join(__dirname,'src','index.jsx')
+        path.join(__dirname, 'src', 'index.jsx')
     ],
 
     output: {
-        path: path.join(__dirname,'build'),
+        path: path.join(__dirname, 'build'),
         filename: 'bundle.js',
         publicPath: '/'
     },
@@ -29,7 +30,7 @@ module.exports = {
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
-                use:{
+                use: {
                     loader: 'babel-loader'
                 }
             },
@@ -64,7 +65,7 @@ module.exports = {
         new webpack.NoEmitOnErrorsPlugin(),
         new HtmlWebpackPlugin({
             title: 'Redux Ecommerce',
-            template: path.join(__dirname, 'src'),
+            template: path.join(__dirname, 'src', 'index.html'),
             filename: 'index.html'
         })
     ],
@@ -72,9 +73,9 @@ module.exports = {
     devServer: {
         host: '0.0.0.0',
         hot: true,
-        port: 8080,
+        port: 4444,
         inline: true,
-        contentBase: path.join(__dirname, 'src'),
+        contentBase: path.join(__dirname, './src'),
         historyApiFallback: true
     }
-}
+};
