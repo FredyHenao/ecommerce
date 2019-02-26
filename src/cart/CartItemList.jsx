@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import uuid from 'uuid';
 
 import CartItem from './CartItem';
 
-const CartItemList = ({}) => (
+const CartItemList = ({ items }) => (
     <div className={'list-group'}>
         {
             items.map(item => (
