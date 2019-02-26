@@ -4,8 +4,7 @@ import Product from './Product';
 const ProductList = ({
                          loading,
                          products
-                     })
-    => (
+                     }) => (
     <section className={'container'}>
         {loading && <span>Cargando datos....</span>}
         <div className={'row'}>
@@ -23,7 +22,7 @@ const ProductList = ({
 );
 
 ProductList.propTypes = {
-    products: PropTypes.array(PropTypes.object).isRequired,
+    products: PropTypes.arrayOf(PropTypes.object).isRequired,
     loading: PropTypes.bool.isRequired
 }
 

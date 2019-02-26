@@ -1,7 +1,6 @@
 import React, {PropTypes} from 'react';
 import {Link} from "react-router";
 
-export default
 const Product =
     (
         {
@@ -55,3 +54,5 @@ Product.prototypes = {
     deliveryStimate: PropTypes.string.isRequired,
     categor: PropTypes.string.isRequired
 }
+
+export default Product;

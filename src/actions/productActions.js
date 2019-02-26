@@ -55,7 +55,7 @@ export function saveProductFailure(error) {
 
 //Actions Creators (Async)
 export function fetchProducts() {
-    return async(dispatch => {
+    return async (dispatch) => {
         dispatch(() => {
             return {
                 type: FETCH_PRODUCTS_INIT
@@ -68,11 +68,11 @@ export function fetchProducts() {
         } catch (error) {
             return dispatch(fetchProductsFailure(error));
         }
-    });
+    };
 }
 
 export function fetchProduct(productId) {
-    return async(dispatch => {
+    return async (dispatch) => {
         dispatch(() => {
             return {
                 type: 'FETCH_PRODUCT_INIT'
@@ -85,11 +85,11 @@ export function fetchProduct(productId) {
         } catch (error) {
             return dispatch(fetchProductFailure(error));
         }
-    });
+    };
 }
 
 export function saveProduct(product) {
-    return async(dispatch => {
+    return async (dispatch) => {
         dispatch(() => {
             return {
                 type: SAVE_PRODUCT_INIT
@@ -102,5 +102,5 @@ export function saveProduct(product) {
         } catch (error) {
             return dispatch(saveProductFailure(error));
         }
-    });
+    };
 }
