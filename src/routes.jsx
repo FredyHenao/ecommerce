@@ -4,6 +4,7 @@ import { Route, IndexRoute } from 'react-router';
 import App from './App';
 import ProductListContainer from './products/ProductListContainer';
 import CartContainer from './cart/CartContainer';
+import ProductAddContainer from './products/ProductAddContainer';
 import ProductDetailContainer from './products/ProductDetailContainer';
 
 export default (
@@ -11,5 +12,6 @@ export default (
         <IndexRoute component={ProductListContainer}/>
         <Route path={'/cart'} component={CartContainer}/>
         <Route path={'/detail/:productId'} component={ProductDetailContainer}/>
+        <Route path={'/add'} component={ProductAddContainer} />
     </Route>
 );
