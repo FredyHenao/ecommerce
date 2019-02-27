@@ -18,10 +18,10 @@ export function addCartItems(item) {
     };
 }
 
-export function removeCartItems(item) {
+export function removeCartItems(itemId) {
     return {
         type: REMOVE_CART_ITEM,
-        payload: item
+        payload: itemId
     };
 }
 
