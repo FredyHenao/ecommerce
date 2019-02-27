@@ -38,9 +38,10 @@ const ProductDetail = ({loading, product, onAddItem}) => {
     return (<span>Cargando Datos....</span>)
 }
 
-ProductDetail PropTypes = {
+ProductDetail.PropTypes = {
     product: PropTypes.object,
-    loading: PropTypes.bool.isRequired
+    loading: PropTypes.bool.isRequired,
+    onAddItem: PropTypes.func
 }
 
 export default ProductDetail;
